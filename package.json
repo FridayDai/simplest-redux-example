@@ -4,7 +4,9 @@
   "description": "simplest redux + react example",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -d --watch"
+    "start": "npm run dev | npm run pack",
+    "pack": "webpack -d --watch",
+    "dev" : "webpack-dev-server --content-base build/"
   },
   "repository": {
     "type": "git",
